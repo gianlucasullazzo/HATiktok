@@ -1,0 +1,59 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "TikTok Account",
+        "description": "Enter your TikTok app credentials. You need a TikTok Developer App with Login Kit enabled.\n\nLeave the Redirect URI field empty to auto-detect, or enter a custom value if the auto-detected one does not match what is registered in the TikTok Developer portal.",
+        "data": {
+          "client_key": "Client Key",
+          "client_secret": "Client Secret",
+          "top_videos_count": "Number of top videos to track",
+          "scan_interval": "Polling interval (minutes)",
+          "redirect_uri": "Redirect URI override (leave empty for auto-detect)"
+        }
+      },
+      "auth": {
+        "title": "Authorize TikTok",
+        "description": "Click the link below to authorize Home Assistant to access your TikTok account."
+      }
+    },
+    "abort": {
+      "already_configured": "Account is already configured.",
+      "auth_failed": "Authorization failed. Please check your credentials and try again."
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to TikTok API.",
+      "invalid_auth": "Invalid credentials."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TikTok Options",
+        "data": {
+          "top_videos_count": "Number of top videos to track",
+          "scan_interval": "Polling interval (minutes)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "followers": {
+        "name": "Followers"
+      },
+      "likes": {
+        "name": "Likes"
+      },
+      "video_count": {
+        "name": "Video Count"
+      },
+      "total_views": {
+        "name": "Total Video Views"
+      },
+      "last_video": {
+        "name": "Last Video"
+      }
+    }
+  }
+}

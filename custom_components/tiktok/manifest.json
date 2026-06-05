@@ -1,0 +1,14 @@
+{
+  "domain": "tiktok",
+  "name": "TikTok",
+  "version": "1.0.0",
+  "documentation": "https://github.com/gianlucasullazzo/hatiktok",
+  "issue_tracker": "https://github.com/gianlucasullazzo/hatiktok/issues",
+  "codeowners": ["@gianlucasullazzo"],
+  "requirements": ["aiohttp>=3.9.0"],
+  "dependencies": [],
+  "after_dependencies": [],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "integration_type": "service"
+}

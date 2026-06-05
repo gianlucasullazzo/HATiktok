@@ -1,0 +1,59 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Account TikTok",
+        "description": "Inserisci le credenziali della tua app TikTok. Devi avere un'app TikTok Developer con Login Kit abilitato.\n\nLascia il campo Redirect URI vuoto per il rilevamento automatico, oppure inserisci un valore personalizzato se quello rilevato non corrisponde a quello registrato nel portale TikTok.",
+        "data": {
+          "client_key": "Client Key",
+          "client_secret": "Client Secret",
+          "top_videos_count": "Numero di top video da monitorare",
+          "scan_interval": "Intervallo di aggiornamento (minuti)",
+          "redirect_uri": "Redirect URI (lascia vuoto per il rilevamento automatico)"
+        }
+      },
+      "auth": {
+        "title": "Autorizza TikTok",
+        "description": "Clicca il link qui sotto per autorizzare Home Assistant ad accedere al tuo account TikTok."
+      }
+    },
+    "abort": {
+      "already_configured": "L'account è già configurato.",
+      "auth_failed": "Autorizzazione fallita. Controlla le credenziali e riprova."
+    },
+    "error": {
+      "cannot_connect": "Impossibile connettersi alle API TikTok.",
+      "invalid_auth": "Credenziali non valide."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opzioni TikTok",
+        "data": {
+          "top_videos_count": "Numero di top video da monitorare",
+          "scan_interval": "Intervallo di aggiornamento (minuti)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "followers": {
+        "name": "Follower"
+      },
+      "likes": {
+        "name": "Mi piace"
+      },
+      "video_count": {
+        "name": "Numero video"
+      },
+      "total_views": {
+        "name": "Visualizzazioni totali"
+      },
+      "last_video": {
+        "name": "Ultimo video"
+      }
+    }
+  }
+}
